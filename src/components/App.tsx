@@ -3,8 +3,7 @@ import * as React from 'react';
 import Document from './document/';
 
 export default () => (
-    <div>
-        App
+    <div className='container'>
         <Document/>
     </div>
 );
