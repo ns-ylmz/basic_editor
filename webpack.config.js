@@ -7,8 +7,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
     entry: { main: './src/index.tsx' },
     output: {
-        filename: '[name].[hash].js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        filename: '[name].[hash].js'
     },
     devtool: 'inline-source-map',
     devServer: {
@@ -43,6 +43,8 @@ module.exports = {
             filename: 'style.[contenthash].css'
         }),
         new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
             template: './public/index.html',
             filename: 'index.html'
         }),

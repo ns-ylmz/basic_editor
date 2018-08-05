@@ -1,7 +1,7 @@
 {
   "name": "basic_editor",
   "version": "1.0.0",
-  "description": "react redux typescript",
+  "description": "basic text editor app",
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --mode=development --hot"
@@ -9,17 +9,23 @@
   "keywords": [
     "react",
     "redux",
-    "typescript"
+    "typescript",
+    "webpack4",
+    "sass"
   ],
   "author": "Enes YILMAZ",
   "license": "ISC",
   "dependencies": {
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@types/react": "^16.4.7",
     "@types/react-dom": "^16.0.6",
+    "@types/react-redux": "^6.0.6",
     "autoprefixer": "^9.1.0",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
